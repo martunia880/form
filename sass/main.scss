@@ -1,4 +1,5 @@
 @import url(./colors.scss);
+@import url(./colors.scss);
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -67,34 +68,100 @@ input {
     .formbox {
         height: 100vh;
         transition: transform .5s;
+        a {
+            text-decoration: none;padding: 0.5eem;
+            margin: 0.3em;
+            color: white;
+        }
         &-heading {
-            padding-bottom: 0.7em;
+            padding-bottom: .2em;
+            font-size: 4.5rem;
             color: white;
         }
         &-paragraph {
-            padding-bottom: 1em;
+            padding-bottom: 2em;
             color: white;
         }
         &-paragraph2 {
-            font-size: 1.4rem;
-            padding-top: 3em;
+            padding: 1.6em 0 0.8em;
+            font-size: 1.8rem;
+            color: white;
         }
         .button {
+            width: 20rem;
             border-radius: 8px;
             cursor: pointer;
-            transition: transform .3s;
+            border: none;
+            font-size: 2rem;
+            transition: transform .3s, background-color .3s, color .3s;
             &:hover {
                 transform: scale(1.1);
+                background-color: rgb(255, 0, 0);
+                color: white;
             }
         }
         &__socialmediaicons {
             &-icon {
-                font-size: 1.8em;
-                padding:0.5em;
-            }
+                font-size: 2.6em;
+                padding:0 0.5em 0;
+                color: white;
+                transition: transfrm .4s, color .4s;
+                &:hover {
+                    transform: scale(1.4);
+                    color: rgb(218, 213, 213);
+                }
+            }  
         }
         &__input {
-            padding-bottom: 0.5em;
+            padding: 1rem;
+            &-text {
+                height: 5rem;
+                width: 25rem;
+                border: none;
+                font-size: 2rem;
+                border-radius: 0.8rem;
+            }
+            input::placeholder {
+                color: rgb(161, 161, 161);
+            }
+            &-checkbox {
+                padding: 0.5em 0 0.9em;
+                display: flex;
+                align-items: center;
+                
+                input[type="checkbox"] {
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                    background-color: #25292c;
+                }
+                input[type="checkbox"]:checked {
+                    background-color: #25292c;
+                    border-color: #24282c;
+                }
+                label {
+                    font-size: 2.2rem;
+                    padding-left: 0.7rem;
+                }
+            }
+        }
+        &__input2 {
+            padding: 0.5em 0 0.9em;
+            display: flex;
+            align-items: center;
+            input[type="checkbox"] {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+            }
+            input[type="checkbox"]:checked {
+                background-color: #25292c;
+                border-color: #24282c;
+            }
+            label {
+                font-size: 2.2rem;
+                padding-left: 0.7rem;
+            }
         }
         &__registerswitch {
             position: absolute;

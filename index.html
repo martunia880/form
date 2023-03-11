@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,56 +12,73 @@
     <script src="https://kit.fontawesome.com/56b56de47f.js" crossorigin="anonymous"></script>
     <title>Example Form</title>
 </head>
-<body>  
+
+<body>
     <div class="form">
         <div id="registerswitch" class="formbox container formbox__registerswitch show">
-                <h1 class="formbox-heading">Let's join us!</h1>
-                <p class="formbox-paragraph">Start beautiful adventure.</p>
-                <button class="button register-btn">Register</button>
-                <p class="formbox-paragraph2">Or regiser using your account</p>
+            <h1 class="formbox-heading">Let's join us!</h1>
+            <p class="formbox-paragraph">Start beautiful adventure.</p>
+            <button class="button register-btn">Register</button>
+        </div>
+        <div id="login" class="formbox formbox__login container show">
+            <form class="container" action="#">
+                <h1 class="formbox-heading">Login</h1>
+                <div class="formbox__input">
+                    <input class="formbox__input-text" placeholder="E-mail Address" type="text">
+                </div>
+                <div class="formbox__input">
+                    <input class="formbox__input-text" type="text" placeholder="Password">
+                </div>
+                <div class="formbox__input2">
+                    <input class="formbox__input-checkbox" type="checkbox">
+                    <label>Remember me</label>
+                    
+                </div>
+                <button class="button">Login</button>
+                <p class="formbox-paragraph2">or use your account</p>
                 <div class="formbox__socialmediaicons">
                     <a href="#"><i class="formbox__socialmediaicons-icon fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="formbox__socialmediaicons-icon fa-brands fa-google"></i></a>
                     <a href="#"><i class="formbox__socialmediaicons-icon fa-brands fa-linkedin"></i></a>
                 </div>
-        </div>
-        <div id="login" class="formbox formbox__login container show">
-                <h1 class="formbox-heading">Login</h1>
-                <div class="formbox__input">
-                    <input placeholder="E-mail Address" type="text">
-                </div>
-                <div class="formbox__input">
-                    <input type="text" placeholder="Password">
-                </div>   
-                <input type="checkbox"> 
-                <label for="">Remember me</label>
-                <button class="button">Login</button>        
+                <a href="#"><p class="formbox-paragraph2">Forgot your password?</p></a>
+            </form>
         </div>
         <div id="register" class="formbox formbox__register container unshow">
+            <form class="container" action="#">
                 <h1 class="formbox-heading">Register</h1>
-            <form action="">
                 <div class="formbox__input">
-                    <input placeholder="Name" type="text">
+                    <input class="formbox__input-text" placeholder="Name" type="text">
                 </div>
                 <div class="formbox__input">
-                    <input placeholder="Last Name" type="text">
+                    <input class="formbox__input-text" placeholder="Last Name" type="text">
                 </div>
                 <div class="formbox__input">
-                    <input placeholder="E-mail Address" type="email">
+                    <input class="formbox__input-text" placeholder="E-mail Address" type="email">
                 </div>
                 <div class="formbox__input">
-                    <input placeholder="Password" type="password">
+                    <input class="formbox__input-text" placeholder="Password" type="password">
                 </div>
-                <input type="checkbox">
+                <div class="formbox__input2">
+                    <input type="checkbox">
+                    <label>I confirm that I accept the regulations.</label>
+                </div>
                 <button class="button">Register</button>
+                <p class="formbox-paragraph2">or use your account</p>
+                <div class="formbox__socialmediaicons">
+                    <a href="#"><i class="formbox__socialmediaicons-icon fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="formbox__socialmediaicons-icon fa-brands fa-google"></i></a>
+                    <a href="#"><i class="formbox__socialmediaicons-icon fa-brands fa-linkedin"></i></a>
+                </div>
             </form>
         </div>
         <div id="loginswitch" class="formbox formbox__loginswitch container unshow">
-                <h1 class="formbox-heading">Welcome back!</h1>
-                <p class="formbox-paragraph">Lorem ipsum dolor sit amet.</p>
-                <button class="button login-btn">Login</button>
+            <h1 class="formbox-heading">Welcome back!</h1>
+            <p class="formbox-paragraph">Lorem ipsum dolor sit amet.</p>
+            <button class="button login-btn">Login</button>
         </div>
     </div>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
