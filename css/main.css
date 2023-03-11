@@ -26,8 +26,44 @@ body {
   height: 100%;
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    opacity: 1;
+    opacity: 110;
+  }
+}
 .button {
   padding: 1em 2em;
+}
+
+.up {
+  transform: translateY(-100%);
+  animation: show 0.3s;
+}
+
+.down {
+  transform: translateY(100%);
+  animation: show 0.3s;
+}
+
+.show {
+  opacity: 1;
+  z-index: 100;
+  animation: show 0.3s;
+}
+
+.unshow {
+  opacity: 0;
+  z-index: 0;
+  animation: show 0.3s;
+}
+
+input {
+  padding: 10px;
 }
 
 .form {
@@ -40,23 +76,15 @@ body {
 }
 .form .formbox {
   height: 100vh;
-  transition: translateX 0.3s;
-}
-.form .formbox .up {
-  transform: translateY(100vh);
-}
-.form .formbox .down {
-  transform: translateY(-100vh);
-}
-.form .formbox .show {
-  opacity: 1;
-  z-index: 10;
+  transition: transform 0.5s;
 }
 .form .formbox-heading {
   padding-bottom: 0.7em;
+  color: white;
 }
 .form .formbox-paragraph {
   padding-bottom: 1em;
+  color: white;
 }
 .form .formbox-paragraph2 {
   font-size: 1.4rem;
@@ -77,29 +105,21 @@ body {
 .form .formbox__input {
   padding-bottom: 0.5em;
 }
-.form .formbox____registerswitch {
+.form .formbox__registerswitch {
   position: absolute;
-  z-index: 0;
   top: 0;
 }
 .form .formbox__login {
   position: absolute;
-  top: 100vh;
-  z-index: 0;
+  bottom: 0;
   background-color: pink;
 }
 .form .formbox__register {
   position: absolute;
-  top: 100vh;
+  bottom: 0;
   background-color: pink;
-  z-index: -10;
-  opacity: 0;
-  animation: anim 1s;
 }
 .form .formbox__loginswitch {
   position: absolute;
   top: 0;
-  z-index: -10;
-  opacity: 0;
-  animation: anim 1s;
 }/*# sourceMappingURL=main.css.map */

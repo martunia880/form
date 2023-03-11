@@ -23,8 +23,39 @@ body {
     width: 100%;
     height: 100%;
 }
+@keyframes show {
+    from {
+        opacity: 0;
+        z-index: -10;
+    }
+    to {
+        opacity: 1;
+        opacity: 110;
+    }
+}
 .button {
     padding: 1em 2em;
+}
+.up {
+    transform: translateY(-100%);
+    animation: show .3s;
+}
+.down {
+    transform: translateY(100%);
+    animation: show .3s;
+}
+.show {
+    opacity: 1;
+    z-index: 100;
+    animation: show .3s;
+}
+.unshow {
+    opacity: 0;
+    z-index: 0;
+    animation: show .3s;
+}
+input {
+    padding: 10px;
 }
 .form {
     position: relative;
@@ -35,22 +66,14 @@ body {
     background-size: cover;
     .formbox {
         height: 100vh;
-        transition: translateX .3s;
-        .up {
-            transform: translateY(100vh);
-        }
-        .down {
-            transform: translateY(-100vh);
-        }
-        .show {
-            opacity: 1;
-            z-index: 10;
-        }
+        transition: transform .5s;
         &-heading {
             padding-bottom: 0.7em;
+            color: white;
         }
         &-paragraph {
             padding-bottom: 1em;
+            color: white;
         }
         &-paragraph2 {
             font-size: 1.4rem;
@@ -73,31 +96,23 @@ body {
         &__input {
             padding-bottom: 0.5em;
         }
-        &____registerswitch {
+        &__registerswitch {
             position: absolute;
-            z-index: 0;
             top: 0;
         }
         &__login {
             position: absolute;
-            top: 100vh;
-            z-index: 0;
+            bottom: 0;
             background-color: pink;
         }
         &__register {
             position: absolute;
-            top: 100vh;
+            bottom: 0;
             background-color: pink;
-            z-index: -10;
-            opacity: 0;
-            animation: anim 1s;
         }
         &__loginswitch {
             position: absolute;
             top: 0;
-            z-index: -10;
-            opacity: 0;
-            animation: anim 1s;
         }
     }
     

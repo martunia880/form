@@ -13,7 +13,7 @@
 </head>
 <body>  
     <div class="form">
-        <div id="registerswitch" class="formbox container formbox__registerswitch">
+        <div id="registerswitch" class="formbox container formbox__registerswitch show">
                 <h1 class="formbox-heading">Let's join us!</h1>
                 <p class="formbox-paragraph">Start beautiful adventure.</p>
                 <button class="button register-btn">Register</button>
@@ -24,7 +24,7 @@
                     <a href="#"><i class="formbox__socialmediaicons-icon fa-brands fa-linkedin"></i></a>
                 </div>
         </div>
-        <div id="login" class="formbox formbox__login container">
+        <div id="login" class="formbox formbox__login container show">
                 <h1 class="formbox-heading">Login</h1>
                 <div class="formbox__input">
                     <input placeholder="E-mail Address" type="text">
@@ -33,9 +33,10 @@
                     <input type="text" placeholder="Password">
                 </div>   
                 <input type="checkbox"> 
+                <label for="">Remember me</label>
                 <button class="button">Login</button>        
         </div>
-        <div id="register" class="formbox formbox__register container">
+        <div id="register" class="formbox formbox__register container unshow">
                 <h1 class="formbox-heading">Register</h1>
             <form action="">
                 <div class="formbox__input">
@@ -51,9 +52,10 @@
                     <input placeholder="Password" type="password">
                 </div>
                 <input type="checkbox">
+                <button class="button">Register</button>
             </form>
         </div>
-        <div id="loginswitch" class="formbox formbox__loginswitch container">
+        <div id="loginswitch" class="formbox formbox__loginswitch container unshow">
                 <h1 class="formbox-heading">Welcome back!</h1>
                 <p class="formbox-paragraph">Lorem ipsum dolor sit amet.</p>
                 <button class="button login-btn">Login</button>
