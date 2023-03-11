@@ -1,0 +1,36 @@
+@media (min-width: 992px) {
+    .up {
+        transform: translateX(-100%);
+        animation: show .3s;
+    }
+    .down {
+        transform: translateX(100%);
+        animation: show .3s;
+    }
+	.form {
+		height: 100vh;
+		.formbox {
+			width: 50%;
+			&__registerswitch {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			&__login {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			&__register {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			&__loginswitch {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}

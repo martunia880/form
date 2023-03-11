@@ -1,5 +1,39 @@
-@import url(./colors.scss);
-@import url(./colors.scss);
+@media (min-width: 992px) {
+  .up {
+    transform: translateX(-100%);
+    animation: show 0.3s;
+  }
+  .down {
+    transform: translateX(100%);
+    animation: show 0.3s;
+  }
+  .form {
+    height: 100vh;
+  }
+  .form .formbox {
+    width: 50%;
+  }
+  .form .formbox__registerswitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .form .formbox__login {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .form .formbox__register {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .form .formbox__loginswitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -43,18 +77,18 @@ body {
 
 .up {
   transform: translateY(-100%);
-  animation: show 0.3s;
+  animation: show 0.5s ease-in-out;
 }
 
 .down {
   transform: translateY(100%);
-  animation: show 0.3s;
+  animation: show 0.5s ease-in-out;
 }
 
 .show {
   opacity: 1;
   z-index: 100;
-  animation: show 0.3s;
+  animation: show 0.3s ease-in;
 }
 
 .unshow {
@@ -81,23 +115,23 @@ input {
 }
 .form .formbox a {
   text-decoration: none;
-  padding: 0.5eem;
+  padding: 0.3em;
   margin: 0.3em;
-  color: white;
+  color: rgb(247, 247, 247);
 }
 .form .formbox-heading {
   padding-bottom: 0.2em;
   font-size: 4.5rem;
-  color: white;
+  color: rgb(247, 247, 247);
 }
 .form .formbox-paragraph {
   padding-bottom: 2em;
-  color: white;
+  color: rgb(247, 247, 247);
 }
 .form .formbox-paragraph2 {
   padding: 1.6em 0 0.8em;
   font-size: 1.8rem;
-  color: white;
+  color: rgb(247, 247, 247);
 }
 .form .formbox .button {
   width: 20rem;
@@ -109,18 +143,18 @@ input {
 }
 .form .formbox .button:hover {
   transform: scale(1.1);
-  background-color: rgb(255, 0, 0);
-  color: white;
+  background-color: rgb(201, 109, 124);
+  color: rgb(247, 247, 247);
 }
 .form .formbox__socialmediaicons-icon {
   font-size: 2.6em;
   padding: 0 0.5em 0;
-  color: white;
+  color: rgb(247, 247, 247);
   transition: transfrm 0.4s, color 0.4s;
 }
 .form .formbox__socialmediaicons-icon:hover {
   transform: scale(1.4);
-  color: rgb(218, 213, 213);
+  color: rgb(201, 109, 124);
 }
 .form .formbox__input {
   padding: 1rem;
