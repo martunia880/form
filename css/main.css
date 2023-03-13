@@ -1,39 +1,3 @@
-@media (min-width: 992px) {
-  .up {
-    transform: translateX(-100%);
-    animation: show 0.3s;
-  }
-  .down {
-    transform: translateX(100%);
-    animation: show 0.3s;
-  }
-  .form {
-    height: 100vh;
-  }
-  .form .formbox {
-    width: 50%;
-  }
-  .form .formbox__registerswitch {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .form .formbox__login {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .form .formbox__register {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .form .formbox__loginswitch {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -129,7 +93,7 @@ input {
   color: rgb(247, 247, 247);
 }
 .form .formbox-paragraph2 {
-  padding: 1.6em 0 0.8em;
+  padding: 1.6em 0 1.6em;
   font-size: 1.8rem;
   color: rgb(247, 247, 247);
 }
@@ -226,4 +190,76 @@ input {
 .form .formbox__loginswitch {
   position: absolute;
   top: 0;
+}
+
+@media (min-width: 992px) {
+  .up {
+    transform: translateX(-100%);
+    animation: show 0.3s;
+  }
+  .down {
+    transform: translateX(100%);
+    animation: show 0.3s;
+  }
+  .form {
+    height: 100vh;
+  }
+  .form .formbox {
+    width: 50%;
+  }
+  .form .formbox-heading {
+    padding-bottom: 0.2em;
+    font-size: 3.8rem;
+  }
+  .form .formbox-paragraph {
+    font-size: 1.6rem;
+  }
+  .form .formbox-paragraph2 {
+    font-size: 1.6rem;
+  }
+  .form .formbox__input-text {
+    height: 4rem;
+    width: 23rem;
+    font-size: 1.6rem;
+  }
+  .form .formbox__input-checkbox input[type=checkbox] {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .form .formbox__input-checkbox label {
+    font-size: 1.8rem;
+  }
+  .form .formbox__input2 input[type=checkbox] {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  .form .formbox__input2 input[type=checkbox]:checked {
+    background-color: #25292c;
+    border-color: #24282c;
+  }
+  .form .formbox__input2 label {
+    font-size: 2.2rem;
+    padding-left: 0.7rem;
+  }
+  .form .formbox__registerswitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .form .formbox__login {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .form .formbox__register {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .form .formbox__loginswitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

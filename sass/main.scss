@@ -1,5 +1,4 @@
 @import './colors';
-@import './media';
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -84,7 +83,7 @@ input {
             color: $light;
         }
         &-paragraph2 {
-            padding: 1.6em 0 0.8em;
+            padding: 1.6em 0 1.6em;
             font-size: 1.8rem;
             color: $light;
         }
@@ -185,3 +184,4 @@ input {
     }
     
 }
+@import './media';
