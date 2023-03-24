@@ -1,0 +1,77 @@
+@media (min-width: 992px) {
+    .up {
+        transform: translateX(-100%);
+        animation: show .3s;
+    }
+    .down {
+        transform: translateX(100%);
+        animation: show .3s;
+    }
+	.form {
+		height: 100vh;
+		.formbox {
+			width: 50%;
+			&-heading {
+				padding-bottom: .2em;
+				font-size: 3.8rem;
+			}
+			&-paragraph {
+				font-size: 1.6rem;
+			}
+			&-paragraph2 {
+				font-size: 1.6rem;
+			}
+			&__input {
+				&-text {
+					height: 4rem;
+					width: 23rem;
+					font-size: 1.6rem;
+				}
+				&-checkbox {
+					input[type="checkbox"] {
+						width: 1.8rem;
+						height: 1.8rem;
+					}
+					label {
+						font-size: 1.8rem;
+					}
+				}
+			}
+			&__input2 {
+				input[type="checkbox"] {
+					width: 3rem;
+					height: 3rem;
+					border-radius: 50%;
+				}
+				input[type="checkbox"]:checked {
+					background-color: #25292c;
+					border-color: #24282c;
+				}
+				label {
+					font-size: 2.2rem;
+					padding-left: 0.7rem;
+				}
+			}
+			&__registerswitch {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			&__login {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			&__register {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			&__loginswitch {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
