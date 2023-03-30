@@ -23,17 +23,19 @@
             <form class="container" action="#">
                 <h1 class="formbox--heading">Login</h1>
                 <div class="formbox__input">
-                    <input class="formbox__input--text" placeholder="E-mail Address" type="text">
+                    <input class="formbox__input--text" id="login-email" placeholder="E-mail Address" type="text">
+                    <p class="error-text error-visibility">Write your e-mail!</p>
                 </div>
                 <div class="formbox__input">
-                    <input class="formbox__input--text" type="text" placeholder="Password">
+                    <input class="formbox__input--text" type="text" id="login-password" placeholder="Password">
+                    <p class="error-text error-visibility">Write your password!</p>
                 </div>
                 <div class="formbox__input2">
                     <input class="formbox__input--checkbox" type="checkbox">
                     <label>Remember me</label>             
                 </div>
                 <br>
-                <button class="button">Login</button>
+                <button class="button login-btn2">Login</button>
                 <p class="formbox--paragraph2">or use your account</p>
                 <div class="formbox__socialmediaicons">
                     <a href="#"><i class="formbox__socialmediaicons--icon fa-brands fa-facebook"></i></a>
@@ -47,26 +49,26 @@
             <form class="container" action="#">
                 <h1 class="formbox--heading">Register</h1>
                 <div class="formbox__input">
-                    <input class="formbox__input--text" placeholder="Name" type="text">
-                    <p class="error-text">error</p>
+                    <input class="formbox__input--text" placeholder="Name" type="text" id="name">
+                    <p class="error-text error-visibility">Write your name!</p>
                 </div>
                 <div class="formbox__input">
-                    <input class="formbox__input--text" placeholder="Last Name" type="text">
-                    <p class="error-text">error</p>
+                    <input class="formbox__input--text" placeholder="Last Name" type="text" id="lastname">
+                    <p class="error-text error-visibility">Write your lastname!</p>
                 </div>
                 <div class="formbox__input">
-                    <input class="formbox__input--text" placeholder="E-mail Address" type="email">
-                    <p class="error-text">error</p>
+                    <input class="formbox__input--text" placeholder="E-mail Address" type="email" id="email">
+                    <p class="error-text error-visibility">Write your e-mail!</p>
                 </div>
                 <div class="formbox__input">
-                    <input class="formbox__input--text" placeholder="Password" type="password">
-                    <p class="error-text">error</p>
+                    <input class="formbox__input--text" placeholder="Password" type="password" id="password">
+                    <p class="error-text error-visibility">Write your password!</p>
                 </div>
                 <div class="formbox__input2">
-                    <input type="checkbox">
+                    <input id="checkbox" type="checkbox" required>
                     <label>I confirm that I accept the regulations.</label>
                 </div>
-                <button class="button">Register</button>
+                <button class="button register-btn2">Register</button>
                 <p class="formbox--paragraph2">or use your account</p>
                 <div class="formbox__socialmediaicons">
                     <a href="#"><i class="formbox__socialmediaicons--icon fa-brands fa-facebook"></i></a>
