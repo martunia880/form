@@ -14,7 +14,8 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const loginEmail = document.querySelector("#login-email");
 const loginPassword = document.querySelector("#login-password");
-const checkbox = document.querySelector('#checkbox');
+const checkbox2 = document.querySelector('#checkbox2');
+const checkbox1 = document.querySelector('#checkbox1');
 
 
 const checkShow = () => {
@@ -34,7 +35,7 @@ const showError = (input,msg) => {
     const errorMsg = input.querySelectorAll(".error-text");
     const b = input.nextElementSibling;
     b.classList.remove('error-visibility');
-    errorMsg.value=msg;
+    b.value=msg;
 }
 const hideError = (input) => {
     const errorMsg = input.querySelectorAll(".error-text");
@@ -42,35 +43,38 @@ const hideError = (input) => {
     b.classList.add('error-visibility');
 }
 const checkForm = input => {
-    input.forEach(el => {
+    input.forEach(el => {;
         if(el.value === '') {
-            showError(el,"COOOOO");
+            showError(el,'cos');
         } else {
             hideError(el);
         }
     })
 }
-const clearBtn = () => {
+const clearBtn = (e) => {
+    checkbox1.checked = false;
+    checkbox2.checked = false;
     e.preventDefault();
     [firstname,lastname,email,password,loginEmail,loginPassword].forEach(el => {
-        el.value ="";
+        el.nextElementSibling.classList.add('error-visibility');
+        el.value="";
     })
 }
-registerBtn.addEventListener("click", () => {
+registerBtn.addEventListener("click", (e) => {
     slideMove();
     checkShow();
-    clearBtn();
+    clearBtn(e);
 })
 
-loginBtn.addEventListener("click", () => {
+loginBtn.addEventListener("click", (e) => {
     slideMove();
     checkShow();
-    clearBtn();
+    clearBtn(e);
 })
 registerBtn2.addEventListener("click", e => {
     e.preventDefault();
     checkForm([firstname,lastname,email,password]);
-    if (!checkbox.checked) {
+    if (!checkbox2.checked) {
         alert('Musisz zaakceptować regulamin');
     }
 })
